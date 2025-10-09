@@ -1,0 +1,11 @@
+<h1 class="heading">Count Application</h1>
+<div class="count">
+    <p class="count-number">{{count}}</p>
+</div>
+
+<div class="container">
+        <button class="button green" (click)="handleAction('add')">Increase</button>
+        <button class="button black" (click)="handleAction('minus')">Decrease</button>
+        <button class="button red" (click)="handleAction('reset')">Reset</button>
+</div>
+<p class="error" *ngIf="error">{{ error }}</p>

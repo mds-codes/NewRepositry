@@ -1,0 +1,5 @@
+<div class="container">
+    <div *ngFor="let u of users">
+        <app-subclass [user]="u" (selectedNameId)="onUserSelected($event)"></app-subclass>
+    </div>
+</div>

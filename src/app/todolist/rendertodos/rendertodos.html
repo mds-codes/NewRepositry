@@ -1,0 +1,10 @@
+<div class="todo-list">
+        <div class="list">
+            <h1>{{todo.name}}</h1>
+            <div class="date">
+                    <p>{{ todo.date | date:'fullDate' }} </p>
+                    <button class="edit" (click)="onClick(todo.id,'edit')">Edit</button>
+                    <button class="delete" (click)="onClick(todo.id,'delete')">Delete</button>
+            </div>
+        </div>
+</div>

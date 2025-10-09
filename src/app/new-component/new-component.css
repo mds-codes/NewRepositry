@@ -1,0 +1,12 @@
+.container{
+    text-align:center;
+    margin-top:20px;
+    padding:20px;
+    background-color: antiquewhite;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.heading{
+    color:palevioletred;
+    font-size: bold;
+    font-family: 'Times New Roman', Times, serif;
+}

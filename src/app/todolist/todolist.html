@@ -1,0 +1,17 @@
+<div class="container">
+    <div>
+        <h1 class="heading">A Todo List Using a Angular</h1>
+        <div class="input">
+        <input type="text" name="" id="todo" class="todos" placeholder="Drop your Todos here..!" #todosInput [value]="todosInput.value">
+
+        <button *ngIf="!isEdited" (click)="onInput(todosInput)">Drop +</button>
+        <button *ngIf="isEdited" (click)="onUpdate(todosInput)">Update</button>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <div *ngFor="let todo of todos">
+        <app-rendertodos [todo]="todo" (action)="onSelected($event)"></app-rendertodos>
+    </div>
+</div>
